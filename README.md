@@ -166,24 +166,4 @@ test/smoke.test.mjs   node:test smoke tests
 examples/             config examples
 ```
 
-## Publishing to GitHub
 
-```sh
-cd dsh-plugin-latex-math
-git init -b main
-git add -A
-git commit -m "feat: LaTeX formula policy plugin for DSH"
-git remote add origin git@github.com:<your-name>/dsh-plugin-latex-math.git
-git push -u origin main
-git tag v1.0.0 && git push --tags
-```
-
-Replace the `<your-name>` placeholders in `package.json` (`repository` / `homepage` / `bugs`)
-and in both READMEs first.
-
-Optional: `npm publish` (if the name is free), then
-`dsh plugin --profile web add dsh-plugin-latex-math`.
-
-## License
-
-MIT
