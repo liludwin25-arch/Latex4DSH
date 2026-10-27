@@ -1,0 +1,18 @@
+# Override the plugin's config from your profile's cordis.patch.yml.
+#
+# The bundle patch (see ../cordis.patch.yml) already inserts the
+# `latex-math-policy` row, so this file only overrides that row's config.
+# Append these entries to $DSH_HOME/profiles/<profile>/cordis.patch.yml.
+#
+# Available keys:
+#   enabled      true | false            (default true)
+#   language     zh | en                 (default zh)
+#   mode         strict | lenient        (default strict)
+#   machineText  plain | latex           (default plain)
+#   extra        free-form string        (default empty)
+- id: latex-math-policy
+  config:
+    language: en
+    mode: strict
+    machineText: plain
+    extra: 'Keep citation numbers as-is'

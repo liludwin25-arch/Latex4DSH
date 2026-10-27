@@ -1,0 +1,50 @@
+{
+  "name": "dsh-plugin-latex-math",
+  "version": "1.0.0",
+  "description": "DSH plugin: make every agent write formulas in LaTeX, typeset by the built-in KaTeX renderer.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "examples",
+    "README.md",
+    "README.en.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "latex",
+    "katex",
+    "math",
+    "formula",
+    "prompt-policy"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-name/dsh-plugin-latex-math.git"
+  },
+  "homepage": "https://github.com/your-name/dsh-plugin-latex-math#readme",
+  "bugs": {
+    "url": "https://github.com/your-name/dsh-plugin-latex-math/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
